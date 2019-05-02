@@ -6,16 +6,15 @@ import android.support.v7.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_main.*
 import android.support.v7.widget.DividerItemDecoration
 import android.content.Intent
+import kotlinx.android.synthetic.main.cell_view.*
 import java.util.*
 
 
 class MainActivity : AppCompatActivity() {
 
-    companion object {
-        var global_noteList = ArrayList<NotificationObject>()
+    companion object global_var{
+        var GLOBAL_REMIND_LIST = ArrayList<ReminderObject>()
     }
-
-
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
