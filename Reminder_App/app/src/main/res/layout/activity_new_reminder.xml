@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent">
+
+    <TextView
+            android:text="New Reminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_new_reminder"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30sp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/editText_reminder" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp"/>
+    <Button
+            android:text="Create Reminder"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_create_reminder" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    <EditText
+            android:layout_width="298dp"
+            android:layout_height="48dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText_reminder" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="99dp" android:layout_marginRight="99dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="99dp"
+            android:layout_marginStart="99dp" android:layout_marginTop="236dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="455dp"
+            android:hint="reminder text" app:layout_constraintVertical_bias="0.0"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="select date"
+            android:id="@+id/textView_select_date"
+            android:layout_centerHorizontal="true"
+            android:textSize="30sp" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp"
+            android:layout_marginTop="7dp"
+            app:layout_constraintTop_toBottomOf="@+id/editText_reminder" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView_select_time"
+            app:layout_constraintStart_toEndOf="@+id/button_time_dialog"
+            android:layout_marginStart="8dp" android:layout_marginLeft="8dp"
+            app:layout_constraintHorizontal_bias="0.431" app:layout_constraintVertical_bias="0.488"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="select time"
+            android:id="@+id/textView_select_time"
+            android:layout_centerHorizontal="true"
+            android:textSize="30sp" android:layout_marginEnd="64dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="64dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/button_create_reminder"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/editText_reminder" app:layout_constraintVertical_bias="0.529"
+    />
+    <Button
+            android:text="DATE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_date_dialog"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="60dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/button_time_dialog"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/editText_reminder"
+            app:layout_constraintVertical_bias="0.482"
+    />
+    <Button
+            android:text="TIME"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_time_dialog"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="58dp"
+            android:layout_marginStart="58dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/button_create_reminder"
+            app:layout_constraintEnd_toStartOf="@+id/textView_select_time"
+            android:layout_marginEnd="48dp" android:layout_marginRight="48dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/editText_reminder" app:layout_constraintVertical_bias="0.519"
+            app:layout_constraintHorizontal_bias="0.4"/>
+</android.support.constraint.ConstraintLayout>
